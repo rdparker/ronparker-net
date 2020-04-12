@@ -80,6 +80,6 @@
     "typescript": "^3.8.3"
   },
   "resolutions": {
-    "sharp": "0.24.0"
+    "sharp": "^0.24.0"
   }
 }
