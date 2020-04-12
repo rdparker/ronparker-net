@@ -14,6 +14,7 @@
               (node-add-modules-path . t)))
  (json-mode . ((json-fmt-tool . 'prettier)
                (json-fmt-on-save . t)))
+ (markdown-mode . ((sentence-end-double-space . t)))
  (typescript-mode . ((node-add-modules-path . t)
                      (typescript-backend . 'lsp)
                      (typescript-fmt-on-save . t)

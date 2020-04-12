@@ -39,6 +39,15 @@ module.exports = {
           `gatsby-remark-hyphenopoly`,
           `gatsby-remark-smallcaps`,
           {
+            resolve: `gatsby-remark-images`,
+          },
+          {
+            resolve: `gatsby-remark-smartypants`,
+            options: {
+              dashes: 'oldschool',
+            },
+          },
+          {
             resolve: `gatsby-remark-embed-snippet`,
             options: {
               directory: `${__dirname}`,
@@ -71,7 +80,7 @@ module.exports = {
         background_color: colors.background,
         theme_color: colors.primary,
         display: `minimal-ui`,
-        icon: `src/images/gatsby-icon.png`, // TODO: Replace with a real icon
+        icon: `src/images/icon.png`,
       },
     },
     `gatsby-plugin-sharp`,
