@@ -45,8 +45,7 @@ const Layout = ({ children }: Props): JSX.Element => {
         <main>{children}</main>
         <footer>
           {copyright}
-          {`, Built with `}
-          <a href="https://www.gatsbyjs.org">Gatsby</a>
+          {`, Ron Parker `}
         </footer>
       </div>
     </>
