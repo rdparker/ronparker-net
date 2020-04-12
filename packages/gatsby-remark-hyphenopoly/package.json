@@ -1,0 +1,31 @@
+{
+  "name": "gatsby-remark-hyphenopoly",
+  "version": "1.0.0",
+  "description": "Insert soft hyphens into all text using Hyphenopoly",
+  "main": "dist/index.js",
+  "author": "Ron Parker (rdparker@gmail.com)",
+  "license": "MIT",
+  "private": true,
+  "scripts": {
+    "build": "babel src --extensions \".ts,.tsx\" --out-dir dist",
+    "watch": "babel -w src --extensions \".ts,.tsx\" --out-dir dist",
+    "prepare": "cross-env NODE_ENV=production npm run build",
+    "lint:types:decl": "dtslint --localTs ../../node_modules/typescript/lib types"
+  },
+  "dependencies": {
+    "@babel/runtime": "^7.9.2",
+    "hyphenopoly": "^4.2.1",
+    "mdast-util-to-string": "^1.1.0",
+    "react": "^16.13.1",
+    "react-dom": "^16.13.1",
+    "unist-util-visit": "^2.0.2"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.8.4",
+    "@babel/core": "^7.9.0",
+    "@babel/preset-typescript": "^7.9.0",
+    "@types/react-dom": "^16.9.6",
+    "babel-preset-gatsby-package": "^0.3.1",
+    "cross-env": "^7.0.2"
+  }
+}

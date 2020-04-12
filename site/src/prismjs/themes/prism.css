@@ -1,0 +1,227 @@
+/* I used the Prism Theme Generator:
+ *
+ *   http://k88hudson.github.io/syntax-highlighting-theme-generator/www
+ *
+ * and edited the results to more closely match the original prism.js
+ * default theme for JavaScript, CSS and HTML, while adding my custom
+ * font selections and reformatting with prettier.
+ */
+
+/* General */
+code[class*="language-"],
+pre[class*="language-"] {
+  color: #593a28;
+  background: none;
+  text-shadow: none;
+  /* NO */
+  /* Source Code Pro is just awful with Libre Baskerville */
+  /* Anonymous Pro just doesn't look right */
+  /* Cutive Mono is too light and only available in a single weight */
+  /* Roboto Mono is to heavy and its light (300) weight is too light */
+  /* Lekton is too light and while tightly spaced, perhaps a bit too much */
+  /* Oxygen Mono is a bit big (.9 works), a bit to straight up and down and the M and W are too black where zig-zag. */
+
+  /* Maybe */
+  /* PT Mono works but the lettershapes have a bit of a NE/SW slope that seems off next to Baskerville. */
+  /* Fira Code works about the best, but is a San Serif */
+  /* Hack may work, but needs to be packaged or downloaded and is a bit tall, 0.9em seems to work about right, but is a touch dense. */
+  /* Cousine's weight is better.  It's not great for CamelCase like SideEffect due to the x-height vs mid-bar differences */
+  /* Computer Modern Typewriter is a touch light, and the x-hight is too small. */
+  /* Courier Prime, alright, but a little too courier. */
+  /* B612 Mono .9em has a bit of the roughness I am looking for, but the visual weight varies a bit much. */
+  font-family: Hack, Consolas, Monaco, "Andale Mono", "Ubuntu Mono", monospace;
+
+  /* Originally I tuned font-size for Hack and falling back to Consolas. 1em was
+     too big for Hack and 0.9 was too small for Consolas. So I settled on 0.9em.
+     Then I saw where Tufte used a smaller size and I really liked it. Since
+     Hack is visually cleaner than Libre Baskerville, it doesn't need to be as
+     big, to look good and can have a tighter line-height, providing more info
+     in the same space. Furthermore, it works much better when viewed on a phone
+     or other small device and when you turn it sideways, you still get over 80
+     characters on a line. */
+  /* font-size: 0.9em; */
+  font-size: 0.642857rem;
+  text-align: left;
+  white-space: pre;
+  word-spacing: normal;
+  word-break: normal;
+  word-wrap: normal;
+  line-height: 1.42;
+
+  -moz-tab-size: 4;
+  -o-tab-size: 4;
+  tab-size: 4;
+
+  -webkit-hyphens: none;
+  -moz-hyphens: none;
+  -ms-hyphens: none;
+  hyphens: none;
+}
+
+pre[class*="language-"]::-moz-selection,
+pre[class*="language-"]::-moz-selection,
+code[class*="language-"]::-moz-selection,
+code[class*="language-"]::-moz-selection {
+  text-shadow: none;
+  background: #bfb39b;
+}
+
+pre[class*="language-"]::selection,
+pre[class*="language-"]::selection,
+code[class*="language-"]::selection,
+code[class*="language-"]::selection {
+  text-shadow: none;
+  background: #bfb39b;
+}
+
+@media print {
+  code[class*="language-"],
+  pre[class*="language-"] {
+    text-shadow: none;
+  }
+}
+
+/* Code blocks */
+pre[class*="language-"] {
+  padding: 1em;
+  margin: 0.5em 0;
+  overflow: auto;
+  background: #e5d8b9;
+}
+
+/* Inline code */
+:not(pre) > code[class*="language-"] {
+  padding: 0.1em;
+  border-radius: 0.3em;
+  background: #f2e9ca;
+  white-space: normal;
+  color: #400d01;
+  font-size: 0.714285rem;       /* Use a slightly larger font inline */
+}
+
+h1 > code[class*="language-"],
+h2 > code[class*="language-"],
+h3 > code[class*="language-"],
+h4 > code[class*="language-"],
+h5 > code[class*="language-"],
+h6 > code[class*="language-"] {
+  background: #f2efdc;
+  font-size: 0.8em;
+  color: #8c1b1b;
+}
+
+a > code[class*="language-"] {
+  background: none !important;
+  /* The standard inline code size looks too small when underlined with the
+   * background highlight removed and the standard 0.8em for headings also
+   * looks a bit too small.  This custom size looks about right. */
+  font-size: 0.87em;
+}
+
+code[class*="language-"]::selection {
+  background-color: #BF702A;
+}
+
+/* Tokens */
+.token.comment,
+.token.prolog,
+.token.doctype,
+.token.cdata {
+  color: #5e7f8c;
+}
+
+.token.punctuation {
+  color: #a69076;
+}
+
+.token.namespace {
+  opacity: 0.7;
+}
+
+.token.property,
+.token.tag,
+.token.boolean,
+.token.number,
+.token.constant,
+.token.symbol,
+.token.deleted {
+  color: #a65149;
+}
+
+.token.selector,
+.token.attr-name,
+.token.string,
+.token.char,
+.token.builtin,
+.token.inserted {
+  color: #848c68;
+}
+
+.token.operator,
+.token.entity,
+.token.url,
+.language-css .token.string,
+.style .token.string {
+  color: #a67f59;
+  background: #f2e4c9;
+}
+
+.token.atrule,
+.token.attr-value,
+.token.keyword {
+  color: #6f91a6;
+}
+
+.token.function,
+.token.class-name {
+  color: #a64141;
+}
+
+.token.regex,
+.token.important,
+.token.variable {
+  color: #bf8f54;
+}
+
+.token.important,
+.token.bold {
+  font-weight: bold;
+}
+.token.italic {
+  font-style: italic;
+}
+
+.token.entity {
+  cursor: help;
+}
+
+/* Line highlighting
+ *
+ * Since I am using Gatsby, prism.js's line highlighting is not used
+ * directly for reasons explained in the Gatsby documentation, but the
+ * styling is done in the standard Gatsby fashion in typography.js.
+ */
+pre[data-line] {
+  position: relative;
+}
+
+pre[class*="language-"] > code[class*="language-"] {
+  position: relative;
+  z-index: 1;
+  /* font-size: .65em; */
+  /* letter-spacing: .01em; */
+}
+
+.line-highlight {
+  position: absolute;
+  left: 0;
+  right: 0;
+  padding: inherit 0;
+  margin-top: 1em;
+  background: #f0da99;
+  box-shadow: inset 5px 0 0 #8c1b1b;
+  z-index: 0;
+  pointer-events: none;
+  line-height: inherit;
+  white-space: pre;
+}

@@ -1,0 +1,9 @@
+*.md
+.cache
+.osync_workdir/
+.vscode/settings.json
+__generated__/
+dist/
+package-lock.json
+package.json
+public

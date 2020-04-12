@@ -1,0 +1,11 @@
+{
+        "cSpell.words": [
+                "asts",
+                "backticks",
+                "blackbox",
+                "frontmatter",
+                "mdast"
+        ],
+        "npm.exclude": "**/.osync_workdir/**",
+        "npm.packageManager": "yarn"
+}
