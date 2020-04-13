@@ -11,8 +11,11 @@ const IndexPage = (): JSX.Element => (
     <h1>Hey Everyone</h1>
     <p>
       This is my new website and there will be much more coming in the future,
-      but for now I&rsquo;ll leave you with a simple offering for Easter,{' '}
-      <Link to="god/bible/the-bible-story">The Bible Story</Link>
+      but for now I&rsquo;ll leave you with a simple offering,{' '}
+      <Link to="god/bible/when-easter-and-creation-collide">
+        When Easter and Creation Collide
+      </Link>
+      .
     </p>
   </Layout>
 )

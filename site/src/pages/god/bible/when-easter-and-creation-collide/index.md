@@ -1,6 +1,5 @@
 ---
-title: The Bible Story
-description: ...
+title: When Easter and Creation Collide
 date: 2020-04-12
 lang: en-us
 ---
