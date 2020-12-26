@@ -28,7 +28,7 @@ Christmas.  In Matthew 12:18–21, we read a prophecy from Isaiah:
 
 To everyone that is feeling a little battered and bruised, to those
 whose light has almost been put out, know this the Lord Jesus was not
-sent to break you; he will put out your flame, though it smoulders
+sent to break you; he will not put out your flame, though it smoulders
 low.
 
 ![A candle whose wick is almost snuffed out](./Candle_White_Smoke.jpg)
