@@ -53,7 +53,7 @@
     "gatsby-remark-prismjs": "^3.3.36",
     "gatsby-remark-smallcaps": "^1.0.1",
     "gatsby-source-filesystem": "^2.1.57",
-    "gatsby-transformer-remark": "^2.6.59",
+    "gatsby-transformer-remark": "^4.11.0",
     "graphql": "^15.4.0",
     "npm-run-all": "^4.1.5",
     "prismjs": "^1.19.0",
