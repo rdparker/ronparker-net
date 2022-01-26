@@ -12,7 +12,7 @@
     "esm": "^3.2.25",
     "gatsby": "^2.19.48",
     "gatsby-image": "^2.2.45",
-    "gatsby-plugin-sharp": "^2.5.4",
+    "gatsby-plugin-sharp": "^4.6.0",
     "gatsby-plugin-typography": "^2.3.25",
     "gatsby-remark-hyphenopoly": "^1.0.0",
     "gatsby-remark-images": "^3.2.2",
